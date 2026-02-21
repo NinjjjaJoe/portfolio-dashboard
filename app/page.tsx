@@ -24,21 +24,21 @@ const projects: Project[] = [
     tags: ['Healthcare', 'AI', 'ERC-1155', 'IPFS'],
     features: [
       'ERC-1155 NFT marketplace for AI models',
-      'Pay-per-inference with InferToken',
+      'Pay-per-inference with InferToken (ERC-20)',
       'Edge deployment for HIPAA compliance',
       'FDA clearance tracking on-chain',
       'Local model execution (no PHI upload)'
     ],
-    liveUrl: 'https://medichain-ai.vercel.app',
-    githubUrl: 'https://github.com/kingz/medichain-ai',
-    tech: ['Solidity', 'React', 'Wagmi', 'IPFS', 'Base L2']
+    liveUrl: 'https://frontend-seven-opal-71.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/medichain-ai',
+    tech: ['Solidity 0.8.26', 'React 19', 'Wagmi 3.x', 'IPFS', 'Base L2']
   },
   {
     id: 'payroll-dapp',
     title: 'Crypto Payroll Manager',
-    description: 'Simple, fast dApp for paying employees in cryptocurrency on Base L2 with scheduled payments.',
+    description: 'Simple, fast dApp for paying employees in cryptocurrency on Base L2 with automated scheduled payments.',
     icon: Wallet,
-    tags: ['DeFi', 'Payroll', 'Base L2'],
+    tags: ['DeFi', 'Payroll', 'Base L2', 'Automation'],
     features: [
       'Multi-token support (ETH, USDC, USDT)',
       'Scheduled payments (weekly/biweekly/monthly)',
@@ -46,33 +46,50 @@ const projects: Project[] = [
       'Gas-efficient on Base L2',
       'Visual payment status indicators'
     ],
-    liveUrl: 'https://crypto-payroll.vercel.app',
-    githubUrl: 'https://github.com/kingz/payroll-dapp',
-    tech: ['Solidity', 'Hardhat', 'React', 'RainbowKit', 'Base']
+    liveUrl: '#',
+    githubUrl: 'https://github.com/NinjjjaJoe/payroll-dapp',
+    tech: ['Solidity 0.8.26', 'Hardhat 3', 'React', 'RainbowKit', 'Base']
   },
   {
     id: 'insurance-platform',
-    title: 'Decentralized Insurance',
-    description: 'Stripe-inspired decentralized insurance platform with community-driven pools and transparent claims management.',
+    title: 'Decentralized Insurance Platform',
+    description: 'Stripe-inspired decentralized insurance platform with community-driven pools and transparent multi-assessor claims management.',
     icon: Shield,
-    tags: ['Insurance', 'DeFi', 'DAO'],
+    tags: ['Insurance', 'DeFi', 'DAO', 'Governance'],
     features: [
       'Create and join insurance pools',
-      'Multi-assessor claim approval',
-      'Role-based access control',
+      'Multi-assessor claim approval system',
+      'Role-based access control (Admin, Member, Assessor)',
       'Beautiful Stripe-inspired UI',
       'Transparent claim processing'
     ],
-    liveUrl: 'https://decentral-insurance.vercel.app',
-    githubUrl: 'https://github.com/kingz/insurance-platform',
-    tech: ['Solidity', 'OpenZeppelin', 'TypeScript', 'Wagmi', 'Ethereum']
+    liveUrl: '#',
+    githubUrl: 'https://github.com/NinjjjaJoe/insurance-platform',
+    tech: ['Solidity 0.8.26', 'OpenZeppelin', 'TypeScript', 'Wagmi', 'Ethereum']
+  },
+  {
+    id: 'insurance-dapp-new',
+    title: 'Insurance dApp (Enhanced)',
+    description: 'Modern decentralized insurance solution with advanced pool management and real-time claim tracking.',
+    icon: Shield,
+    tags: ['Insurance', 'DeFi', 'Web3'],
+    features: [
+      'Advanced pool creation and management',
+      'Real-time claim status tracking',
+      'Automated claim assessment',
+      'Secure fund management',
+      'Modern responsive UI'
+    ],
+    liveUrl: '#',
+    githubUrl: 'https://github.com/NinjjjaJoe/insurance-dapp-new',
+    tech: ['Solidity', 'React', 'Hardhat', 'Wagmi', 'Base']
   },
   {
     id: 'trialchain',
     title: 'TrialChain',
-    description: 'Clinical trial data management on blockchain with patient consent tracking and immutable audit trails.',
+    description: 'Clinical trial data management on blockchain with patient consent tracking and immutable audit trails for research integrity.',
     icon: TestTube,
-    tags: ['Healthcare', 'Privacy', 'Research'],
+    tags: ['Healthcare', 'Privacy', 'Research', 'Compliance'],
     features: [
       'Patient consent management',
       'Immutable audit trails',
@@ -80,8 +97,8 @@ const projects: Project[] = [
       'Trial data integrity verification',
       'Multi-site collaboration'
     ],
-    liveUrl: 'https://trialchain.vercel.app',
-    githubUrl: 'https://github.com/kingz/trialchain',
+    liveUrl: '#',
+    githubUrl: 'https://github.com/NinjjjaJoe/trialchain',
     tech: ['Solidity', 'React', 'Vite', 'Ethers.js', 'IPFS']
   }
 ]
@@ -109,7 +126,7 @@ export default function Home() {
             <nav className={styles.nav}>
               <a href="#projects" className={styles.navLink}>Projects</a>
               <a href="#expertise" className={styles.navLink}>Expertise</a>
-              <a href="https://github.com/kingz" target="_blank" rel="noopener noreferrer" className={styles.navLink}>
+              <a href="https://github.com/NinjjjaJoe" target="_blank" rel="noopener noreferrer" className={styles.navLink}>
                 <Github size={18} />
               </a>
             </nav>
@@ -217,7 +234,7 @@ export default function Home() {
               © 2026 King Z. Built with Next.js & deployed on Vercel.
             </p>
             <div className={styles.footerLinks}>
-              <a href="https://github.com/kingz" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/NinjjjaJoe" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
               <a href="https://twitter.com/kingz" target="_blank" rel="noopener noreferrer">
