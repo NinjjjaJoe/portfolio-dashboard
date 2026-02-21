@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'educhain',
+    title: 'EduChain',
+    description: 'Decentralized education credentials - Blockchain-verified degrees, tamper-proof academic records, NFT diplomas',
+    url: 'https://frontend-29hadrliu-ninjjjajoes-projects.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/educhain',
+    tags: ['Education', 'NFT', 'Credentials', 'Academic']
+  },
+  {
     id: 'rental-escrow',
     title: 'Rental Escrow',
     description: 'Decentralized property rental platform with smart contract escrow - Automated payments, inspections, dispute resolution',
