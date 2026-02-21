@@ -6,11 +6,24 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Stripe color palette */
+  --stripe-purple: #635bff;
+  --stripe-purple-dark: #5649d8;
+  --stripe-blue-dark: #0a2540;
+  --stripe-blue-light: #425466;
+  --stripe-gray: #697386;
+  --stripe-border: #e3e8ee;
+  --stripe-bg-light: #f6f9fc;
+}
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
+  background: #ffffff;
+  color: #0a2540;
 }
 
 a {
@@ -23,4 +36,9 @@ button {
   border: none;
   outline: none;
   font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
 }
