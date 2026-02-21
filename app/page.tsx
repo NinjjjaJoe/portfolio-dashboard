@@ -1,115 +1,101 @@
 'use client'
 
-import { ExternalLink, Github, Shield, Wallet, Activity, Users, Heart, TestTube } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
 import styles from './page.module.css'
 
 interface Project {
   id: string
   title: string
   description: string
-  icon: any
-  tags: string[]
-  features: string[]
-  liveUrl?: string
+  url: string
   githubUrl?: string
-  tech: string[]
+  tags: string[]
 }
 
 const projects: Project[] = [
   {
     id: 'medichain-ai',
     title: 'MediChain AI',
-    description: 'AI-Powered Diagnostic Models on the Edge. Token-gated marketplace for FDA-cleared AI diagnostic models with HIPAA compliance.',
-    icon: Heart,
-    tags: ['Healthcare', 'AI', 'ERC-1155', 'IPFS'],
-    features: [
-      'ERC-1155 NFT marketplace for AI models',
-      'Pay-per-inference with InferToken (ERC-20)',
-      'Edge deployment for HIPAA compliance',
-      'FDA clearance tracking on-chain',
-      'Local model execution (no PHI upload)'
-    ],
-    liveUrl: 'https://frontend-seven-opal-71.vercel.app',
+    description: 'AI-Powered Diagnostic Models on the Edge - Token-gated marketplace for FDA-cleared AI models',
+    url: 'https://frontend-seven-opal-71.vercel.app',
     githubUrl: 'https://github.com/NinjjjaJoe/medichain-ai',
-    tech: ['Solidity 0.8.26', 'React 19', 'Wagmi 3.x', 'IPFS', 'Base L2']
+    tags: ['Healthcare', 'AI', 'NFT', 'Base L2']
+  },
+  {
+    id: 'project-1',
+    title: 'Project 1',
+    description: 'Production-ready Web3 application with enterprise-grade smart contracts',
+    url: 'https://frontend-jqq6hy44m-ninjjjajoes-projects.vercel.app',
+    tags: ['DeFi', 'Web3', 'Solidity']
+  },
+  {
+    id: 'project-2',
+    title: 'Project 2',
+    description: 'Full-stack dApp with modern UI/UX and blockchain integration',
+    url: 'https://frontend-7b091li2v-ninjjjajoes-projects.vercel.app',
+    tags: ['dApp', 'React', 'Ethereum']
+  },
+  {
+    id: 'project-3',
+    title: 'Project 3',
+    description: 'Decentralized application showcasing smart contract development',
+    url: 'https://frontend-3mc5ivjxh-ninjjjajoes-projects.vercel.app',
+    tags: ['Smart Contracts', 'Web3']
+  },
+  {
+    id: 'project-4',
+    title: 'Project 4',
+    description: 'Enterprise blockchain solution with Layer 2 integration',
+    url: 'https://frontend-6b380kowy-ninjjjajoes-projects.vercel.app',
+    tags: ['L2', 'Scaling', 'DeFi']
+  },
+  {
+    id: 'project-5',
+    title: 'Project 5',
+    description: 'Web3 platform with advanced oracle integration',
+    url: 'https://frontend-aj8r2hut4-ninjjjajoes-projects.vercel.app',
+    tags: ['Chainlink', 'Oracles', 'Web3']
+  },
+  {
+    id: 'project-6',
+    title: 'Project 6',
+    description: 'Decentralized finance application with security audits',
+    url: 'https://frontend-gj8pq1f6z-ninjjjajoes-projects.vercel.app',
+    tags: ['DeFi', 'Security', 'Audited']
   },
   {
     id: 'payroll-dapp',
     title: 'Crypto Payroll Manager',
-    description: 'Simple, fast dApp for paying employees in cryptocurrency on Base L2 with automated scheduled payments.',
-    icon: Wallet,
-    tags: ['DeFi', 'Payroll', 'Base L2', 'Automation'],
-    features: [
-      'Multi-token support (ETH, USDC, USDT)',
-      'Scheduled payments (weekly/biweekly/monthly)',
-      'Batch payment processing',
-      'Gas-efficient on Base L2',
-      'Visual payment status indicators'
-    ],
-    liveUrl: '#',
+    description: 'Employee payment dApp on Base L2 with scheduled payments',
+    url: '#',
     githubUrl: 'https://github.com/NinjjjaJoe/payroll-dapp',
-    tech: ['Solidity 0.8.26', 'Hardhat 3', 'React', 'RainbowKit', 'Base']
+    tags: ['Payroll', 'Base L2', 'DeFi']
   },
   {
     id: 'insurance-platform',
-    title: 'Decentralized Insurance Platform',
-    description: 'Stripe-inspired decentralized insurance platform with community-driven pools and transparent multi-assessor claims management.',
-    icon: Shield,
-    tags: ['Insurance', 'DeFi', 'DAO', 'Governance'],
-    features: [
-      'Create and join insurance pools',
-      'Multi-assessor claim approval system',
-      'Role-based access control (Admin, Member, Assessor)',
-      'Beautiful Stripe-inspired UI',
-      'Transparent claim processing'
-    ],
-    liveUrl: '#',
+    title: 'Decentralized Insurance',
+    description: 'Community insurance pools with transparent claims management',
+    url: '#',
     githubUrl: 'https://github.com/NinjjjaJoe/insurance-platform',
-    tech: ['Solidity 0.8.26', 'OpenZeppelin', 'TypeScript', 'Wagmi', 'Ethereum']
-  },
-  {
-    id: 'insurance-dapp-new',
-    title: 'Insurance dApp (Enhanced)',
-    description: 'Modern decentralized insurance solution with advanced pool management and real-time claim tracking.',
-    icon: Shield,
-    tags: ['Insurance', 'DeFi', 'Web3'],
-    features: [
-      'Advanced pool creation and management',
-      'Real-time claim status tracking',
-      'Automated claim assessment',
-      'Secure fund management',
-      'Modern responsive UI'
-    ],
-    liveUrl: '#',
-    githubUrl: 'https://github.com/NinjjjaJoe/insurance-dapp-new',
-    tech: ['Solidity', 'React', 'Hardhat', 'Wagmi', 'Base']
+    tags: ['Insurance', 'DAO', 'Governance']
   },
   {
     id: 'trialchain',
     title: 'TrialChain',
-    description: 'Clinical trial data management on blockchain with patient consent tracking and immutable audit trails for research integrity.',
-    icon: TestTube,
-    tags: ['Healthcare', 'Privacy', 'Research', 'Compliance'],
-    features: [
-      'Patient consent management',
-      'Immutable audit trails',
-      'HIPAA-compliant architecture',
-      'Trial data integrity verification',
-      'Multi-site collaboration'
-    ],
-    liveUrl: '#',
+    description: 'Clinical trial data management on blockchain with patient consent',
+    url: '#',
     githubUrl: 'https://github.com/NinjjjaJoe/trialchain',
-    tech: ['Solidity', 'React', 'Vite', 'Ethers.js', 'IPFS']
+    tags: ['Healthcare', 'Privacy', 'Research']
   }
 ]
 
 const expertise = [
-  { icon: '✅', text: 'Smart Contract Development (Solidity, Vyper)' },
-  { icon: '✅', text: 'Security Audits & Best Practices' },
-  { icon: '✅', text: 'Full-Stack dApp Development' },
-  { icon: '✅', text: 'Oracle Integration (Chainlink)' },
-  { icon: '✅', text: 'Layer 2 Solutions (Base, Arbitrum, Polygon)' },
-  { icon: '✅', text: 'DevOps & Infrastructure' }
+  'Smart Contract Development (Solidity, Vyper)',
+  'Security Audits & Best Practices',
+  'Full-Stack dApp Development',
+  'Oracle Integration (Chainlink)',
+  'Layer 2 Solutions (Polygon, Arbitrum)',
+  'DevOps & Infrastructure'
 ]
 
 export default function Home() {
@@ -117,85 +103,44 @@ export default function Home() {
     <div className={styles.page}>
       {/* Header */}
       <header className={styles.header}>
-        <div className="container">
-          <div className={styles.headerContent}>
-            <h1 className={styles.logo}>
-              <span className={styles.logoIcon}>🥷</span>
-              King Z
-            </h1>
-            <nav className={styles.nav}>
-              <a href="#projects" className={styles.navLink}>Projects</a>
-              <a href="#expertise" className={styles.navLink}>Expertise</a>
-              <a href="https://github.com/NinjjjaJoe" target="_blank" rel="noopener noreferrer" className={styles.navLink}>
-                <Github size={18} />
-              </a>
-            </nav>
-          </div>
+        <div className={styles.container}>
+          <h1 className={styles.logo}>Web3 dApp Portfolio | NinjjjaBot</h1>
+          <a href="https://github.com/NinjjjaJoe" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+            <Github size={20} />
+          </a>
         </div>
       </header>
 
       {/* Hero */}
       <section className={styles.hero}>
-        <div className="container">
-          <div className={styles.heroContent}>
-            <div className={styles.badge}>
-              <Activity size={14} />
-              <span>Building Web3 Solutions</span>
-            </div>
-            <h1 className={styles.heroTitle}>
-              Bespoke Smart Contract Consulting
-            </h1>
-            <p className={styles.heroDescription}>
-              We build production-ready Web3 applications for real-world problems.
-              Each dApp showcases enterprise-grade smart contracts, modern UI/UX,
-              and full-stack integration.
-            </p>
-          </div>
+        <div className={styles.container}>
+          <h2 className={styles.heroTitle}>Bespoke Smart Contract Consulting</h2>
+          <p className={styles.heroDescription}>
+            We build production-ready Web3 applications for real-world problems.
+            Each dApp showcases enterprise-grade smart contracts, modern UI/UX,
+            and full-stack integration.
+          </p>
         </div>
       </section>
 
-      {/* Projects Grid */}
-      <section id="projects" className={styles.projects}>
-        <div className="container">
-          <h2 className={styles.sectionTitle}>Featured Projects</h2>
+      {/* Projects */}
+      <section className={styles.projects}>
+        <div className={styles.container}>
           <div className={styles.projectsGrid}>
             {projects.map((project) => (
               <div key={project.id} className={styles.projectCard}>
-                <div className={styles.projectHeader}>
-                  <div className={styles.projectIcon}>
-                    <project.icon size={24} />
-                  </div>
-                  <h3 className={styles.projectTitle}>{project.title}</h3>
-                </div>
-                
+                <h3 className={styles.projectTitle}>{project.title}</h3>
                 <p className={styles.projectDescription}>{project.description}</p>
-                
                 <div className={styles.projectTags}>
                   {project.tags.map((tag) => (
                     <span key={tag} className={styles.tag}>{tag}</span>
                   ))}
                 </div>
-                
-                <div className={styles.projectFeatures}>
-                  {project.features.map((feature, idx) => (
-                    <div key={idx} className={styles.feature}>
-                      <span className={styles.featureIcon}>✓</span>
-                      <span>{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                
-                <div className={styles.projectTech}>
-                  {project.tech.map((t) => (
-                    <code key={t} className={styles.techBadge}>{t}</code>
-                  ))}
-                </div>
-                
                 <div className={styles.projectLinks}>
-                  {project.liveUrl && (
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
+                  {project.url !== '#' && (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
                       <ExternalLink size={16} />
-                      Live Demo
+                      View Project
                     </a>
                   )}
                   {project.githubUrl && (
@@ -212,39 +157,24 @@ export default function Home() {
       </section>
 
       {/* Expertise */}
-      <section id="expertise" className={styles.expertise}>
-        <div className="container">
+      <section className={styles.expertise}>
+        <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Our Expertise</h2>
-          <div className={styles.expertiseGrid}>
+          <ul className={styles.expertiseList}>
             {expertise.map((item, idx) => (
-              <div key={idx} className={styles.expertiseItem}>
-                <span className={styles.expertiseIcon}>{item.icon}</span>
-                <span>{item.text}</span>
-              </div>
+              <li key={idx} className={styles.expertiseItem}>
+                <span className={styles.checkmark}>✅</span>
+                {item}
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* Footer */}
       <footer className={styles.footer}>
-        <div className="container">
-          <div className={styles.footerContent}>
-            <p className={styles.footerText}>
-              © 2026 King Z. Built with Next.js & deployed on Vercel.
-            </p>
-            <div className={styles.footerLinks}>
-              <a href="https://github.com/NinjjjaJoe" target="_blank" rel="noopener noreferrer">
-                GitHub
-              </a>
-              <a href="https://twitter.com/kingz" target="_blank" rel="noopener noreferrer">
-                Twitter
-              </a>
-              <a href="mailto:contact@kingz.dev">
-                Contact
-              </a>
-            </div>
-          </div>
+        <div className={styles.container}>
+          <p>© 2026 NinjjjaBot. Built with Next.js & deployed on Vercel.</p>
         </div>
       </footer>
     </div>
