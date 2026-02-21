@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'rental-escrow',
+    title: 'Rental Escrow',
+    description: 'Decentralized property rental platform with smart contract escrow - Automated payments, inspections, dispute resolution',
+    url: 'https://frontend-i4kl0pvlj-ninjjjajoes-projects.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/rental-escrow',
+    tags: ['Real Estate', 'Escrow', 'Rentals', 'Payments']
+  },
+  {
     id: 'document-notary',
     title: 'Document Notary',
     description: 'Blockchain-based document verification with cryptographic proof. Privacy-preserving notarization on-chain.',
