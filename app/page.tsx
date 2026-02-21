@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'document-notary',
+    title: 'Document Notary',
+    description: 'Blockchain-based document verification with cryptographic proof. Privacy-preserving notarization on-chain.',
+    url: 'https://frontend-2mjiad3kk-ninjjjajoes-projects.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/document-notary',
+    tags: ['Privacy', 'Security', 'Verification', 'SHA-256']
+  },
+  {
     id: 'predictchain',
     title: 'PredictChain',
     description: 'The Bloomberg Terminal of Probabilistic Markets - Trade outcomes on crypto, politics, sports, AI with LMSR AMM',
