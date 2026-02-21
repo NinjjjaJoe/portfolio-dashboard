@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'predictchain',
+    title: 'PredictChain',
+    description: 'The Bloomberg Terminal of Probabilistic Markets - Trade outcomes on crypto, politics, sports, AI with LMSR AMM',
+    url: 'https://frontend-seven-opal-71.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/prediction-market-chain',
+    tags: ['Prediction Markets', 'DeFi', 'LMSR', 'Oracle']
+  },
+  {
     id: 'cryptoquest',
     title: 'CryptoQuest',
     description: 'Gamified blockchain learning platform with interactive quests and on-chain achievements',
