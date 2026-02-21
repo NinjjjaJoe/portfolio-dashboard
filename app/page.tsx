@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'iot-telecom',
+    title: 'IoT Telecom',
+    description: 'Decentralized IoT & telecommunications - Blockchain-secured devices, data integrity, enterprise network management',
+    url: 'https://frontend-mx7w27h3t-ninjjjajoes-projects.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/iot-telecom',
+    tags: ['IoT', 'Telecom', 'Security', 'Network']
+  },
+  {
     id: 'educhain',
     title: 'EduChain',
     description: 'Decentralized education credentials - Blockchain-verified degrees, tamper-proof academic records, NFT diplomas',
