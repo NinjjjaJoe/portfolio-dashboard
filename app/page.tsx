@@ -14,6 +14,21 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'skill-badge-quest',
+    title: 'Skill Badge Quest',
+    description: 'Gamified blockchain learning platform with interactive skill badges and on-chain achievements',
+    url: 'https://frontend-i3sj4jryx-ninjjjajoes-projects.vercel.app',
+    tags: ['GameFi', 'Education', 'NFT Badges', 'Learning']
+  },
+  {
+    id: 'fractional-re',
+    title: 'FractionalRE',
+    description: 'Fractional Real Estate Tokenization Platform - ERC-20 property tokens with Stripe-inspired UI on Ethereum',
+    url: 'https://frontend-seven-opal-71.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/fractional-rwa-dapp',
+    tags: ['RWA', 'Real Estate', 'DeFi', 'Tokenization']
+  },
+  {
     id: 'iot-telecom',
     title: 'IoT Telecom',
     description: 'Decentralized IoT & telecommunications - Blockchain-secured devices, data integrity, enterprise network management',
@@ -184,7 +199,7 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>10+</div>
+              <div className={styles.statNumber}>17+</div>
               <div className={styles.statLabel}>Production dApps</div>
             </div>
             <div className={styles.statCard}>
@@ -192,7 +207,7 @@ export default function Home() {
               <div className={styles.statLabel}>Security audited</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>7</div>
+              <div className={styles.statNumber}>9</div>
               <div className={styles.statLabel}>Live deployments</div>
             </div>
           </div>
