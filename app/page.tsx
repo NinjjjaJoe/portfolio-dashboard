@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'rwa-risk-assessment',
+    title: 'RWA Risk Assessment',
+    description: 'AI-Powered Risk Assessment Platform with multi-oracle integration (Chainlink, Pyth) and zero-knowledge proof verification',
+    url: 'https://rwa-risk-assessment.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/rwa-risk-assessment',
+    tags: ['AI', 'RWA', 'Oracle', 'Risk Analysis', 'DeFi']
+  },
+  {
     id: 'skill-badge-quest',
     title: 'Skill Badge Quest',
     description: 'Gamified blockchain learning platform with interactive skill badges and on-chain achievements',
@@ -199,7 +207,7 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>17+</div>
+              <div className={styles.statNumber}>18+</div>
               <div className={styles.statLabel}>Production dApps</div>
             </div>
             <div className={styles.statCard}>
@@ -207,7 +215,7 @@ export default function Home() {
               <div className={styles.statLabel}>Security audited</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>9</div>
+              <div className={styles.statNumber}>10</div>
               <div className={styles.statLabel}>Live deployments</div>
             </div>
           </div>
