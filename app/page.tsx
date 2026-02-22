@@ -14,6 +14,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    id: 'blockchain-consulting',
+    title: 'ClawDBot Consulting',
+    description: 'AI-Powered Blockchain Consulting Portfolio - Smart contract development, security audits, and full-stack dApp services',
+    url: 'https://blockchain-consulting-portfolio.vercel.app',
+    githubUrl: 'https://github.com/NinjjjaJoe/blockchain-consulting-portfolio',
+    tags: ['Consulting', 'AI', 'Portfolio', 'Enterprise', 'Services']
+  },
+  {
     id: 'rwa-risk-assessment',
     title: 'RWA Risk Assessment',
     description: 'AI-Powered Risk Assessment Platform with multi-oracle integration (Chainlink, Pyth) and zero-knowledge proof verification',
@@ -207,7 +215,7 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.statsGrid}>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>18+</div>
+              <div className={styles.statNumber}>19+</div>
               <div className={styles.statLabel}>Production dApps</div>
             </div>
             <div className={styles.statCard}>
@@ -215,7 +223,7 @@ export default function Home() {
               <div className={styles.statLabel}>Security audited</div>
             </div>
             <div className={styles.statCard}>
-              <div className={styles.statNumber}>10</div>
+              <div className={styles.statNumber}>11</div>
               <div className={styles.statLabel}>Live deployments</div>
             </div>
           </div>
